@@ -11,3 +11,5 @@ You can add or get album by using `addAlbum` and `getAlbum` route :
 - First setup your database configuration in `application.properties` that locate in main resource file . 
 - Go to `localhost:8080/getAlbum` to get Album in database . 
 - Go to `localhost:8080/addAlbum` to add Album in database .
+
+
