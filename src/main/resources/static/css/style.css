@@ -23,26 +23,36 @@ h4{
     border:1px solid #EEEEEE;
     min-width: 500px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
-.album-table-container{
+.song-form{
+    background: #D18CE0;
+    padding: 15px;
+    border-radius: 15px;
+    border:1px solid #EEEEEE;
+    min-width: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.album-table-container , .song-table-container{
     margin-top: 30px;
 }
-#album-table {
+#album-table , #song-table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 50%;
 }
 
-#album-table td, #album-table th {
+#album-table td, #album-table th , #song-table td, #song-table th{
     border: 1px solid #ddd;
     padding: 8px;
 }
 
-#album-table tr:nth-child(even){background-color: #f2f2f2;}
+#album-table tr:nth-child(even) , #song-table tr:nth-child(even){background-color: #f2f2f2;}
 
-#album-table tr:hover {background-color: #ddd;}
+#album-table tr:hover ,#song-table tr:hover {background-color: #ddd;}
 
-#album-table th {
+#album-table th , #song-table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;

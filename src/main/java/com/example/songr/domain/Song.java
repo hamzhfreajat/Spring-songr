@@ -1,18 +1,17 @@
-
 package com.example.songr.domain;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
-import java.util.Set;
 
-
+@JsonIgnoreProperties({"album"})
 @Setter
 @Getter
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Entity
-public class Album {
+public class Song {
     @Setter(value = AccessLevel.NONE)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,14 +20,11 @@ public class Album {
     @NonNull
     private String title;
     @NonNull
-    private String artist;
-    @NonNull
-    private int songCount;
-    @NonNull
-    private int secondsLength ;
-    @NonNull
-    private String imageUrl ;
+    private int length;
 
-    @OneToMany(mappedBy = "album")
-    private Set<Song> songs;
+    private int trackNumber;
+
+    @ManyToOne
+    Album album;
+
 }
