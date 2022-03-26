@@ -13,3 +13,10 @@ You can add or get album by using `addAlbum` and `getAlbum` route :
 - Go to `localhost:8080/addAlbum` to add Album in database .
 
 
+You can add or get song or you can link between song and album now by using `/getSongs` ,  `/addSongs` , `/album/{id}`route :
+- First setup your database configuration in `application.properties` that locate in main resource file .
+- Go to `localhost:8080/getSongs` to get Album in database .
+- Go to `localhost:8080/addSongs` to add Album in database .
+- You can link between song and album from backend using post request to a certain `id` . 
+
+
